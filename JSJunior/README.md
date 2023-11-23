@@ -26,3 +26,27 @@ string = "Э" + string;
 var age = 12;
 var accompanied = true;
 var ageMoved = age >= 12 || accompanied;
+
+// DESCRIPTION
+// Page 69
+// У нас есть три массива со словами, и в строках ,  и  мы с помощью трех индексов берем
+// из каждого массива по случайному слову. Затем мы склеиваем их, помещая результат
+// в переменную randomInsult, — это и есть готовая дразнилка. В строках  и  мы используем
+// множитель 3, поскольку и в randomAdjective, и в randomBodyPart по три элемента.
+// Аналогично в строке  мы умножаем на 5, ведь в randomWords пять элементов.
+// Обратите внимание, что мы добавили между randomAdjective и randomWord
+
+//SOLUTION
+var randomColor = ["red", "green", "gray", "blue", "black"]
+var randomPart = ["face", "leg", "hair", "hand"]
+var randomState = ["sticky", "nasty", "slimy", "smelly"]
+
+var randomColors = randomColor[Math.floor(Math.random() * randomColor.length)];
+var randomParts = randomPart[Math.floor(Math.random() * randomPart.length)];
+var randomStates = randomState[Math.floor(Math.random() * randomState.length)];
+
+var randomInsult = "Your " + randomParts + "like " + randomColors + " " + randomStates + " " + randomParts + "!";
+randomInsult;
+
+var randomInsultJoin = ["At your place", randomParts, "like", randomStates, randomParts + "!!!"].join(" ");
+randomInsult;
