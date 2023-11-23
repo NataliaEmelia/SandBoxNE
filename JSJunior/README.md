@@ -50,3 +50,14 @@ randomInsult;
 
 var randomInsultJoin = ["At your place", randomParts, "like", randomStates, randomParts + "!!!"].join(" ");
 randomInsult;
+
+// DESCRIPTION
+// Page 69 #4.
+// Соединение чисел
+// Как с помощью метода join превратить массив [3, 2, 1]
+// в строку "3 is greater than 2 is greater than 1"?
+
+//SOLUTION
+var masJoin = [3, 2, 1];
+var masJoins = [masJoin[0], "is greater than", masJoin[1], "is greater than", masJoin[2]].join(" ");
+masJoins;
