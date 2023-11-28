@@ -61,3 +61,38 @@ randomInsult;
 var masJoin = [3, 2, 1];
 var masJoins = [masJoin[0], "is greater than", masJoin[1], "is greater than", masJoin[2]].join(" ");
 masJoins;
+
+// DESCRIPTION
+// Page 82 #4.1
+// Подсчет очков
+// Представьте, что вы играете в какую-нибудь игру со своими друзьями и вам нужно
+// вести счет. Создайте для этого объект и назовите его scores. Пусть ключами
+// будут имена ваших друзей, а значениями — набранные ими очки (0 или больше).
+// Счет игроков надо будет увеличивать по мере того, как они зарабатывают новые
+// очки. Как вы будете менять счет игрока, хранящийся в объекте scores?
+
+//SOLUTION
+var scores = {};
+scores["Kate"] = 0;
+scores["Paul"] = 0;
+scores["Marie"] = 0;
+scores["Marie"] += 1;
+
+// DESCRIPTION
+// Page 82 #4.2
+// Вглубь объектов и массивов
+// Пускай у вас есть такой объект:
+// var myCrazyObject = {
+// "name": "Нелепый объект",
+// "some array": [7, 9, { purpose: "путаница", number: 123 }, 3.3],
+// "random animal": "Банановая акула"
+// };
+// Как одной строкой JavaScript-кода извлечь из этого объекта число 123?
+
+//SOLUTION
+var myCrazyObject = {
+"name": "Нелепый объект",
+"some array": [7, 9, { purpose: "путаница", number: 123 }, 3.3],
+"random animal": "Банановая акула"
+};
+myCrazyObject["some array"][2].number;
