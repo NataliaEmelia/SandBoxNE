@@ -96,3 +96,26 @@ var myCrazyObject = {
 "random animal": "Банановая акула"
 };
 myCrazyObject["some array"][2].number;
+
+/ DESCRIPTION
+// Page 101 #6
+// Напишите программу с переменной name. Если в этой переменной находится
+// ваше имя, напечатайте: «Привет мне!» — иначе напечатайте: «Привет,
+// незнакомец!» (Подсказка: используйте === для сравнения переменной name
+// с вашим именем.)
+// Теперь дополните программу, чтобы она здоровалась с вашим папой,
+// если в name его имя, и с вашей мамой, если в name ее имя. Если же там
+// что-то иное, по-прежнему печатайте «Привет, незнакомец!».
+
+//SOLUTION
+var name;
+if (name === "Natalia") {
+console.log("Hi to me");
+} else if (name === "Evgeniy"){
+console.log("Hi cat");
+} else if (name === "Maria"){
+console.log("Hi kitty");
+} else {
+console.log("Hi stranger");
+}
+name = "Maria";
