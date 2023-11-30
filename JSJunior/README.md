@@ -181,7 +181,7 @@ randomString += alphabet[Math.floor(Math.random() * alphabet.length)];
 console.log(randomString);
 
 / DESCRIPTION
-// Page 108
+// Page 109
 // #3. h4ck3r sp34k
 // Переведите англоязычный текст на «хакерский язык» (h4ck3rsp34k)! Многим в интернете нравится заменять некоторые
 // буквы похожими на них числами — например, число «4» похоже на букву «A», «3» похоже на «E», «1» — на «I», а «0»
