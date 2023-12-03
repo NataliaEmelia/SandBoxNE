@@ -13,7 +13,20 @@
 		"программа",
 		"макака",
 		"прекрасный",
-		"оладушек"
+		"оладушек",
+		"подушка",
+		"сметана",
+		"попугай",
+		"свобода",
+		"мороженое",
+		"крокодил",
+		"фантик",
+		"панорама",
+		"прогресс",
+		"молоко",
+		"стихия",
+		"ураган",
+		"пушистый"
 	];
 
 	var word = words[Math.floor(Math.random() * words.length)];
@@ -28,6 +41,8 @@
 	while (remainingLetters > 0) {
 		alert(answerArray.join(" "));
 		var guess = prompt("Угадайте букву или нажмите Отмена для выхода из игры.");
+		guess = guess.toLowerCase();
+		
 		if (guess === null) {
 			break;
 		} else if (guess.length !== 1) {
@@ -38,8 +53,10 @@
 					answerArray[j] = guess;
 					remainingLetters--;
 				}
+					
 			}
 		}
+
 	}
 	
 	alert(answerArray.join(" "));

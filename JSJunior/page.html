@@ -38,7 +38,7 @@
 	}
 	*/
 
-	var alphabet = "абвгдеёжзийклмнопрстуфхцчшщъыьэюя";
+	/*var alphabet = "абвгдеёжзийклмнопрстуфхцчшщъыьэюя";
     var randomString = "";
     while (randomString.length < 6) {
 	randomString += alphabet[Math.floor(Math.random() * alphabet.length)];
@@ -62,6 +62,16 @@
 	// «e» = «3»
 	// «i» = «1»
 	// «o» = «0»
+*/
+
+var generateRandomInsult = function () {
+	var randomBodyParts = ["глаз", "нос", "череп"];
+	var randomAdjectives = ["вонючая", "склизкая", "противная"];
+	var randomWords = ["муха", "выдра", "дубина", "мартышка", "крыса"];
+	var randomString = "У тебя " + pickRandomWord(randomBodyParts) + " словно " + pickRandomWord(randomAdjectives) + " " + pickRandomWord(randomWords) + "!!!";
+	return randomString;
+};
+generateRandomInsult();
 
 	
 	</script>
