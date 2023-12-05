@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>KakieToYroki</title>
+</head>
+
+<body>
+	<h1>Kakie To Yroki</h1>
+	<script>
+
+	// #1 Создайте функцию, которая принимает строку как параметр и возвращает ее длину. 
+	// getLength("Привет!")
+	// getLength("")
+	// getLength()
+
+	function getLength(text) {
+		if (!text) {
+			return 0;
+		}
+		return text.length;
+	}
+
+	console.log(getLength("Привет!"));
+	console.log(getLength(""))
+	console.log(getLength())
+
+	// #2 Создайте функцию, которая принимает массив чисел как параметр и возвращает их среднее значение
+	// average([1, 2, 3, 4, 5])
+	
+	let sumNumber
+	let srzNumber
+
+	function average(number) {
+		number = [];
+		for (i = 0; i < number.length; i++) {
+			sumNumber += number[i];
+			console.log(sumNumber)
+		}
+		srzNumber = sumNumber/number.length;
+		return srzNumber;
+	}
+	average([1, 2, 3, 4, 5]);
+	console.log(sumNumber)
+	//console.log(average(number));
+
+	</script>
+
+</body>
+</html>
