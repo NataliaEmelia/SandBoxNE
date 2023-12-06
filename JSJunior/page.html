@@ -88,24 +88,22 @@ alert(result)*/
 
 //page 140 #2. Совпадают ли массивы
 
-
 function areArraysSame(a, b) {
-	a = [];
-	b = [];
-	/*if (a.length !== b.length) {
-		return;*/
-	} if (let d = 0; d < a.length; d++) { 
-    	for (let j = 0; j < b.length; j++) {
-			if (a[d] === b[i]) {
-    			a++;
-				b++;
-   			} else {
-				break;
-			}
-		}
-	}
+	if (a.length !== b.length) {
+		return false; 
+	} 
+	
+	for (var i = 0; i < a.length; i++) {
+		if (a[i] !== b[i]) {
+			return false;	
+		} 
+	}	
+	return true;
+}
 
-areArraysSame([1, 2, 3], [1, 2, 3, 4]);
+console.log(areArraysSame([1, 2, 3], [4, 5, 6]));
+console.log(areArraysSame([1, 2, 3], [1, 2, 3]));
+console.log(areArraysSame([1, 2, 3], [1, 2, 3, 4]));
 
 	</script>
 
