@@ -14,7 +14,7 @@
 	// getLength("")
 	// getLength()
 
-	function getLength(text) {
+	/*function getLength(text) {
 		if (!text) {
 			return 0;
 		}
@@ -23,27 +23,34 @@
 
 	console.log(getLength("Привет!"));
 	console.log(getLength(""))
-	console.log(getLength())
+	console.log(getLength())*/
 
 	// #2 Создайте функцию, которая принимает массив чисел как параметр и возвращает их среднее значение
 	// average([1, 2, 3, 4, 5])
+
+	// #2.1
+	let average = [1, 2, 3, 4, 5, 6];
+	let sum = average.reduce(function (abc, val) {
+		return abc + val;
+	})
 	
-	let sumNumber
-	let srzNumber
+ 	let averageResult = sum / average.length;
 
-	function average(number) {
-		number = [];
-		for (i = 0; i < number.length; i++) {
-			sumNumber += number[i];
-			console.log(sumNumber)
+	console.log(averageResult);
+	
+	// #2.2
+	function averageTwo(array) {
+		let sumTwo = 0;
+
+		for (let i = 0; i < array.length; i++) {
+			const value = array[i];
+			sumTwo += value;
 		}
-		srzNumber = sumNumber/number.length;
-		return srzNumber;
+		return sumTwo / array.length;
 	}
-	average([1, 2, 3, 4, 5]);
-	console.log(sumNumber)
-	//console.log(average(number));
+	console.log(averageTwo([1, 2, 3, 4, 5]));
 
+	
 	</script>
 
 </body>
