@@ -8,14 +8,130 @@
 <body>
 
 	<script>
-	var createHelloWorld = function() {
-    return function(...args) {
-        // return value
-        return "Hello World";
-    }
-};
+
+	// #1 
+	/*var createHelloWorld = function() {
+		return function(...args) {
+			// return value
+			return "Hello World";
+		}
+    };*/
+
+	// #2
+
+	/*function counterN() {
+		let n = 1;
+		let count = ["call", "call", "call", "call"]
+		while(n < count.length) {
+			++n;
+		}
+		return counterN
+		console.log(n)
+		console.log(count.length)
+	}
+	
+counterN(6)
+console.log(counterN)*/
+
+
+//Напишите функцию min(a,b), которая возвращает меньшее из чисел a и b.
+
+//Пример вызовов:
+
+/*function min(a, b) {
+	if (a < b ) {
+		return a; 
+	} else  {
+		return b }	
+	return min;
+}
+
+console.log(min(2, 5)) 
+console.log(min(3, -1)) 
+console.log(min(1, 1)) */
+
+// Напишите функцию pow(x,n), которая возводит x в степень n и возвращает результат.
+// Создайте страницу, которая запрашивает x и n, а затем выводит результат pow(x,n).
+// P.S. В этой задаче функция обязана поддерживать только натуральные значения n, т.е. целые от 1 и выше.
+
+/*
+let x = prompt('Введите зачение х, целое число от 1 и выше', []);
+let n = prompt('Введите зачение n, целое число от 1 и выше', []);
+let sum;
+if (x < 1 || n < 1) {
+	alert('Вы ввели отрицательное число или 0. Введите целое число от 1 и выше')
+} else if (!(x%1) || !(n%1)) {
+	alert('Вы ввели не целое число. Введите целое число от 1 и выше');
+} else {
+	sum = x ** n;
+}
+*/
+
+
+let sum
+function pow(
+	x = prompt('Введите зачение х, целое число от 1 и выше', []), 
+	n = prompt('Введите зачение n, целое число от 1 и выше', []),
+) {
+	if (x < 1 || n < 1) {
+		alert('Вы ввели отрицательное число или 0. Введите целое число от 1 и выше')
+	} else if ((x%1) || (n%1)) {
+		alert('Вы ввели не целое число. Введите целое число от 1 и выше')
+	} else {
+	sum = x ** n;
+	return sum;
+	} 
+}
+pow()
+
+console.log(sum) // 3 * 3 = 9
+//console.log(pow(3, 3)) // 3 * 3 * 3 = 27
+//console.log(pow(1, 100)) // 1 * 1 * ...* 1 = 1
+
 
 	</script>
+/* Given an integer n, return a counter function. 
+This counter function initially returns n and then returns 1 more than the previous 
+value every subsequent time it is called (n, n + 1, n + 2, etc).
 
+ 
+
+Example 1:
+
+Input: 
+n = 10 
+["call","call","call"]
+Output: [10,11,12]
+Explanation: 
+counter() = 10 // The first time counter() is called, it returns n.
+counter() = 11 // Returns 1 more than the previous time.
+counter() = 12 // Returns 1 more than the previous time.
+
+Example 2:
+
+Input: 
+n = -2
+["call","call","call","call","call"]
+Output: [-2,-1,0,1,2]
+Explanation: counter() initially returns -2. Then increases after each sebsequent call.
+ 
+
+Constraints:
+
+-1000 <= n <= 1000
+0 <= calls.length <= 1000
+calls[i] === "call"
+
+/**
+ * @param {number} n
+ * @return {Function} counter
+ */
+var createCounter = function(n) {
+    
+    return function() {
+        
+    };
+};
+*/
 </body>
 </html>
