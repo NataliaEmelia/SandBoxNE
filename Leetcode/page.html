@@ -17,23 +17,6 @@
 		}
     };*/
 
-	// #2
-
-	/*function counterN() {
-		let n = 1;
-		let count = ["call", "call", "call", "call"]
-		while(n < count.length) {
-			++n;
-		}
-		return counterN
-		console.log(n)
-		console.log(count.length)
-	}
-	
-counterN(6)
-console.log(counterN)*/
-
-
 //Напишите функцию min(a,b), которая возвращает меньшее из чисел a и b.
 
 //Пример вызовов:
@@ -50,6 +33,7 @@ console.log(min(2, 5))
 console.log(min(3, -1)) 
 console.log(min(1, 1)) */
 
+// Кантор, задача из раздела 15. Функции. 
 // Напишите функцию pow(x,n), которая возводит x в степень n и возвращает результат.
 // Создайте страницу, которая запрашивает x и n, а затем выводит результат pow(x,n).
 // P.S. В этой задаче функция обязана поддерживать только натуральные значения n, т.е. целые от 1 и выше.
@@ -67,7 +51,7 @@ if (x < 1 || n < 1) {
 }
 */
 
-
+/*
 let sum
 function pow(
 	x = prompt('Введите зачение х, целое число от 1 и выше', []), 
@@ -83,18 +67,14 @@ function pow(
 	} 
 }
 pow()
-
-console.log(sum) // 3 * 3 = 9
-//console.log(pow(3, 3)) // 3 * 3 * 3 = 27
-//console.log(pow(1, 100)) // 1 * 1 * ...* 1 = 1
-
+console.log(sum) 
+*/
 
 	</script>
+
 /* Given an integer n, return a counter function. 
 This counter function initially returns n and then returns 1 more than the previous 
 value every subsequent time it is called (n, n + 1, n + 2, etc).
-
- 
 
 Example 1:
 
@@ -126,12 +106,56 @@ calls[i] === "call"
  * @param {number} n
  * @return {Function} counter
  */
+var calls = ["call","call","call","call","call"]
 var createCounter = function(n) {
+	if ((-1000 <= n <= 1000) && (0 <= calls.length <= 1000)) {
+
+	}
     
     return function() {
         
     };
 };
 */
+
+<script>
+// #2
+
+/*let n = -2;
+let calls = ["call", "call", "call", "call", "call"];
+let i = 0;
+let result;
+
+function counter() {
+	result = n + i;
+	if (i < calls.length) {
+		i++;
+	} return result;
+}
+	console.log(counter());
+	console.log(counter());
+	console.log(counter());
+	console.log(counter());
+	console.log(counter());
+*/	
+
+/**
+* @param {number} n
+* @return {Function} counter
+*/
+/*
+var createCounter = function(n) {
+   return function() {
+	   return n++
+   };
+};
+
+const counter = createCounter(10)
+
+console.log(counter())
+*/
+
+</script>
+
 </body>
 </html>
