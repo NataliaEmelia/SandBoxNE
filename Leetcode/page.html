@@ -155,6 +155,41 @@ const counter = createCounter(10)
 console.log(counter())
 */
 
+
+// 2704. To Be Or Not To Be
+
+/**
+ * @param {string} val
+ * @return {Object}
+ */
+
+/*
+ var expect = function(val) {
+    var toBe = function(valToBe) {
+		if (val === valToBe) {
+			return true;
+		} else {
+			throw new Error('Not Equal')
+		}
+	}
+	var notToBe = function(valNotToBe) {
+		if (val !== valNotToBe) {
+			return true;
+		} else {
+			throw new Error('Equal')
+		}
+	}
+	return {
+		toBe,
+		notToBe
+	}
+};
+
+
+console.log(expect(5).toBe(5)); // true
+console.log(expect(5).notToBe(4)); // throws "Equal"
+*/
+
 </script>
 
 </body>
